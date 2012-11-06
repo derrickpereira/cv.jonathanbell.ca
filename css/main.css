@@ -1,0 +1,661 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+.header-container {
+    border-bottom: 20px solid #e44d26;
+}
+
+.footer-container,
+.main aside {
+    border-top: 20px solid #e44d26;
+}
+
+.header-container,
+.footer-container,
+.main aside {
+    background: #f16529;
+}
+
+.title {
+    color: white;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: white;
+    background: #e44d26;
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles - Jonathan Bell CV
+   ========================================================================== */
+
+@font-face {
+    font-family: 'gotham-book';
+    src: url('../fonts/gotham-book.eot');
+    src: url('../fonts/gotham-book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham-book.woff') format('woff'),
+         url('../fonts/gotham-book.ttf') format('truetype'),
+         url('../fonts/gotham-book.svg#gotham-book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gotham-bold';
+    src: url('../fonts/gotham-bold.eot');
+    src: url('../fonts/gotham-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham-bold.woff') format('woff'),
+         url('../fonts/gotham-bold.ttf') format('truetype'),
+         url('../fonts/gotham-bold.svg#gotham-bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gotham-medium';
+    src: url('../fonts/gotham-medium.eot');
+    src: url('../fonts/gotham-medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham-medium.woff') format('woff'),
+         url('../fonts/gotham-medium.ttf') format('truetype'),
+         url('../fonts/gotham-medium.svg#gotham-medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'garamond-pro-regular';
+    src: url('../fonts/garamond-pro-regular.eot');
+    src: url('../fonts/garamond-pro-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/garamond-pro-regular.woff') format('woff'),
+         url('../fonts/garamond-pro-regular.ttf') format('truetype'),
+         url('../fonts/garamond-pro-regular.svg#garamond-pro-regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gotham-lightItalic';
+    src: url('../fonts/gotham-lightItalic.eot');
+    src: url('../fonts/gotham-lightItalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham-lightItalic.woff') format('woff'),
+         url('../fonts/gotham-lightItalic.ttf') format('truetype'),
+         url('../fonts/gotham-lightItalic.svg#gotham-lightItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  padding: 0 0.5em;
+  font-family: 'garamond-pro-regular', serif;
+  margin: 0 0 4em 0;
+  font-size: 1em;
+  max-width: 1994px; /* the year kurt cobain died */
+}
+
+a, a:hover, a:visited {
+  text-decoration: none;
+  color: #404040;
+}
+
+img, a img {
+  border: none;
+}
+
+.jonathanbell {
+  font-weight: normal;
+  font-family: 'gotham-book', sans-serif;
+  color: #b0bc22;
+  font-size: 2em;
+}
+  .gotham-bold {
+    font-family: 'gotham-bold', sans-serif;
+  }
+
+section {
+  clear: both;
+}
+
+.section-headings {
+  font-family: 'gotham-book', 'gotham-medium', sans-serif;
+  color: #b0bc22;
+  margin: 2em 0 0 0;
+  font-size: 1.5em;
+}
+
+ul {
+  list-style: square;
+  margin: 0;
+}
+
+p, li, noscript {
+  margin: 0.5em 0;
+}
+
+.noTopMargin {
+  margin-top: 0 !important;
+}
+
+.sub-head-job-title,
+.italic-dates-company {
+  font-size: 1.25em;
+  margin: 0;
+}
+.italic-dates-company {
+  font-size: 1em;
+}
+
+.sub-head-job-title {
+  font-family: 'gotham-book', sans-serif;
+  font-weight: normal;
+  color: #404040;
+}
+
+.italic-dates-company {
+  font-family: 'gotham-lightItalic', sans-serif;
+  font-weight: normal;
+}
+
+/* non-semantic div to provide some spacing for layout */
+.break {
+  height: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+.first {
+  margin-top: 0.25em;
+}
+
+.pdf {
+  background: url(data:image/gif;base64,R0lGODlhEAAQAOZBAP///8TO21Fri+xBQdEnJ+71//z9//T4/+Lu/9Dj/+ny//j7/8vg//f6/+AyMtgqK4qaruPu/+jx/8Xd/9zr//n7/9bm//P4//Oen++do+jGyvOOk+vr9PSwtO6pqd3q/+jr9fNuce7b36OwxNHj//z+/+c9PfGcoOdfaO/1//P5/+Lt/tnF2/f09trg9POvsuRwfOtiafKdodbn/9fn//PZ2+/2/+bv++jv/Jyqu/HJzN3r/+zR2u+xtu+bosDa/8rg/////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAEEALAAAAAAQABAAAAeegEGCAYSFhSOCiUEBAI2OAAEFOYqLj44BDQUQggOdngMOjYyZm5+eD6KFAkGmnQSOBhUXqyYODwS4uI0lFQcFq4OPLzUGCwc2EsCVjh46CxcFEgjKjI4YHQcpChEU1I4tJxk8OCs7M94ABj0yPjEoMDQJ3gYaGxw3ES4sCQzUBiIhQChAQMECvwnUFqgoMPCDBRJAJvygJqCixYsVAwEAOw==);
+}
+
+#clearUnicorns {
+  display: none;
+  z-index: 100;
+  position: fixed;
+  font-family: 'Righteous', cursive;
+  font-size: 300%;
+  left: 13px;
+  top: 63px;
+  -moz-transform:rotate(-11deg);
+  -webkit-transform:rotate(-11deg);
+  -o-transform:rotate(-11deg);
+  -ms-transform:rotate(-11deg);
+  transform:rotate(-11deg)
+  cursor: pointer;
+}
+
+#clearUnicorns, .easterEgg {
+  -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+}
+
+  #clearUnicorns:hover {
+    cursor: pointer;
+    font-size: 370%;
+  }
+
+.unicorn {
+
+}
+
+.easterEgg:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+#printButton {
+  background: url(data:image/gif;base64,R0lGODlhJAAjAPf/AHWSv2dtmf39/+Pj/6SrtuPx/8TM2MPL18Lg/6yyvHl/jubz/7nAzvj4/3V7hh4gJy8xOM7n/yotMigrMPDz+PH0+GtzgsnP236Ej292hnCFsqaqre/y9Ts+Rb3E0UpPW42Rm7/I1aWpspqfquz1/2t4kJabobze/21+q/v9/8vT4WhwnL/CxS0wNldcZnGMuY6VotHo/3uDkfP4//n7/e3t/9fr/+v0/19oe6Oqtvn8/+nt8uXo7u73/+/z9+jo/32FlUNITlNZY1FZZ2t3pE9XZy0vNTk9Q8HJ1qKptens8cLK1zA0O+7y9mlvfPPz/0lNV0xRW2Zplt7u/0FGTNns/4eXjDs/RuPm6jY5RWFmckZLWYSKl7C4xkBMZfP2+fHx/xsjNc/Qy6i1w7bb/2xzgJyhpr7F0zY7SMTM2UBDS36Glq7X/0pOV+Hj51pngm10gvP5//b6/1BWYra917vD0Jqjrp+kq5nAkENJVuPq+GJpdXJ5iqCotKKptqqut9vt/6SwwYeYvrO4wJifp2hvgDQ3QISKk9Xq/4CNpExPVJGngzY5P3V7jTtLaoCGlBcaHoWGmImNlqavvquvuY6elXl+qzk+SFBUXvL4/6i0qHOMaCMuQZqou0pSZE5TYBsdIk9WYdvj8IeToo+apPv8/be+yfX4+zxAR0tQWayz2SQnLYSVwaKnrefn/8LGzcjIwDAzOTQ2PbvGuEJWevj6//v7//3+/9vj7zw/Rvz8/0hMU+3w9IuhfU9UXz9FUG94lzlASz9CSz9DTpKZo5SapOTo6mvdWX2Nn3h7hZ2jrdji/7zBycbj/1llfamrqHuArODv/0NIUpukr0dLU3SHm3Z8icTL13B2gyIkKSUnKvX1/6utsFZdbC8zP1hfa7/G05yksJ6msZ+ns2h1jevu87GysuTo7efq7zA0OTM1O5mdpnyEo5qdpEJKW3N6hzA2QS4xOGdufOrq/yUpLScpLicqL2xygNTb5m1zgMnk/+7u/0xQWfb4/DM4Q////yH5BAEAAP8ALAAAAAAkACMAAAj/AP8JHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDMuBMCxo0eOGF8IGEmy5IuLYzQ0EJCiVqYbBQDFaKChhMVAKJ6k0DGDRIEqERA8QWGzYiciNeTM6LFgCiJ9J2oQIWcx0YofPUgsiGYjKJkfK5xZfCNlwIICU2zEaHaCzQApXiaKIVYMw6VQnz7k+RUMjT943h7seQfHHMQ/bkqxADEogYgRMLgowHbPyYd2O/A5gKiMRj9J8oCsASJDQSM+GSwUGpJsh5JHD1m8onHKwb0yTrS4EOIrChRpwwwp4sGDkhmHI4x9oXCkRTwI8YxIsLcq2wNQkLTNwqNpc8N8HJo07PFBoYJ5Cj6a8Cq3A905LIuO9erm8BuzBElyENi/P0eSPuOIE840dlixSSVDOGSNKRcsccABBkT44BJIhHCGB3WEkIYK4GTg0CF+XOBBLhDEwgQT6UAg3QT20FOPOirgwwAGDpkAgwF1yAJFFKm0QU0QaqDSQQdXHDEBPrh0AYJDG8hwDRKMbDHHbpjws0sQVAQhTBYSiKLHJCY4BEsRRbjDCS0icLPBHYSQMgoy1UTiSBie4IDDMxK1Iogtt+gQh09AIbAMK+tYxA4dujSwDRj7zOPKAJCqAoxF0ARg6aWYWmqJRpx26umnDwUEADs=);
+  background-repeat: no-repeat;
+  background-position: -5px -8px;
+  padding-left: 30px;
+  height: 35px;
+  display: none;
+  padding-top: 3px;
+  margin-top: 4em;
+  /*margin-right: 2em;*/
+}
+
+#printButton:hover {
+  text-decoration: underline;
+}
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        width: 38%;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* EDIT LATER */
+/* apply some extra padding if the device supports media queries */
+@media only screen and (min-width: 320px) {
+
+  body {
+    padding: 0 1em;
+  }
+
+}
+
+/* ==========================================================================
+   Author's custom styles - Jonathan Bell CV
+   ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+
+  .main {
+    margin-left: 10%;
+    margin-right: 2.5%;
+  }
+
+  .title {
+    margin-bottom: 4em;
+  }
+
+  #printButton {
+    float: right;
+    margin-top: 4em;
+    margin-bottom: 1em;
+    display: block;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  body {
+    margin: 0 0 4em 2em;
+  }
+
+  .main {
+    margin-left: 24.3%;
+    max-width: 47%;
+    transition:all .3s ease;
+    -o-transition:all .3s ease;
+    -moz-transition:all .3s ease;
+    -webkit-transition:all .3s ease;
+  }
+
+  .title {
+    border-left: 1px solid black;
+    height: 60px;
+    margin: 0em 0em 3em 0em;
+  }
+
+  .jonathanbell {
+    line-height: 100px;
+    margin: 0 0 0 0.5em;
+  }
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* ==========================================================================
+   Print Styles - Author's custom print styles - Jonathan Bell CV
+   ========================================================================== */
+
+@media print {
+
+  .chromeframe {
+    display: none;
+  }
+
+  * {
+      background: transparent !important;
+      box-shadow:none !important;
+      text-shadow: none !important;
+      filter: none !important;
+      -ms-filter: none !important;
+    }
+
+  pre, blockquote {
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+    } /* h5bp.com/t */
+
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page { margin: 0.5cm; }
+
+  p, h2, h3, h4 {
+    orphans: 3; widows: 3;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+
+  h2, h3, h4 {
+    page-break-after: avoid;
+  }
+
+  .main {
+    margin-left: 31.3%;
+    *margin-left: 27.6%;
+    margin-right: 17.3%;
+  }
+
+  @-moz-document url-prefix() {
+
+    .main {
+      margin-left: 30.1%; /* FF is printing this margin differently than webkit */
+    }
+
+  }
+
+  #printBtnWrapper {
+    display: none;
+  }
+
+  .italic-dates-company {
+    font-style: italic;
+  }
+
+  .title {
+    border-left: 2px solid #404040;
+    padding-left: 1em;
+    height: auto;
+  }
+
+  .jonathanbell {
+    line-height: normal;
+  }
+
+  h1, h2 {
+    font-weight: normal;
+  }
+
+  .gotham-bold {
+    font-weight: bold;
+  }
+
+}
