@@ -1,4 +1,4 @@
 Curriculum Vitae of Jonathan Bell
 ================
 
-My online résumé. :)
+My online résumé. :) 
