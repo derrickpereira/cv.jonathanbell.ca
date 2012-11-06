@@ -1,0 +1,8 @@
+.DS_Store
+/OLD
+/OLD/*
+/build
+/build/*
+/publish
+/publish/*
+sftp-config.json

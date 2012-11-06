@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Jonathan Bell -- Front-end Developer -- @jonnymilano
+
+# THANKS
+
+    Paul Irish and Co. for making the HTML5 Boilerplate, upon which this page is built :)
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
