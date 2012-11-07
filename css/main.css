@@ -7,7 +7,7 @@ button,
 input,
 select,
 textarea {
-    color: #222;
+    color: #404040;
 }
 
 body {
@@ -191,17 +191,6 @@ nav a:hover {
 }
 
 @font-face {
-    font-family: 'garamond-pro-regular';
-    src: url('../fonts/garamond-pro-regular.eot');
-    src: url('../fonts/garamond-pro-regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/garamond-pro-regular.woff') format('woff'),
-         url('../fonts/garamond-pro-regular.ttf') format('truetype'),
-         url('../fonts/garamond-pro-regular.svg#garamond-pro-regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'gotham-lightItalic';
     src: url('../fonts/gotham-lightItalic.eot');
     src: url('../fonts/gotham-lightItalic.eot?#iefix') format('embedded-opentype'),
@@ -212,9 +201,22 @@ nav a:hover {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'garamond-pro-regular';
+    src: url('../fonts/garamond-pro-regular.eot');
+    src: url('../fonts/garamond-pro-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/garamond-pro-regular.woff') format('woff'),
+         url('../fonts/garamond-pro-regular.ttf') format('truetype'),
+         url('../fonts/garamond-pro-regular.svg#garamond-pro-regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
   padding: 0 0.5em;
   font-family: 'garamond-pro-regular', serif;
+  color: #404040;
   margin: 0 0 4em 0;
   font-size: 1em;
   max-width: 1994px; /* the year kurt cobain died */

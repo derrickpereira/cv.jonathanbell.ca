@@ -15,10 +15,9 @@
 
   <meta name="viewport" content="width=device-width">
 
-  <script type="text/javascript" src="//use.typekit.net/wfh7gfh.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Righteous">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic">
+  <link href='http://fonts.googleapis.com/css?family=Cantarell:400,400italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -216,6 +215,16 @@
 		$('#addressLink')
 			.html(homeAddress + ', ' + homeCity + ' ' + homeProvince)
 			.attr('href', 'https://maps.google.ca/maps?q=' + encodeURIComponent(homeAddress + ' ' + homeCity + ' ' + homeProvince));
+
+		if ($.client.os === 'Win' || $.client.os === 'Windows') {
+			$('body').css('font-family','Crimson');
+			$('.italic-dates-company').css({
+				fontFamily: 'Cantarell',
+				fontStyle: 'italic',
+				fontSize: '110%',
+				fontWeight: 'light'
+			});
+		}
 
 		// googl analyticz
 	  var _gaq = _gaq || [];
