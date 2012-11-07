@@ -212,6 +212,9 @@ nav a:hover {
     font-style: normal;
 }
 
+html {
+  -webkit-font-smoothing: antialiased;
+}
 
 body {
   padding: 0 0.5em;
