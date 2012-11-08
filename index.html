@@ -132,11 +132,11 @@
 		if (screen.width < 1024) {
 			$('#teleNoun').html('<a href="tel:+1' + phoneNumber.replace(/\s+/g, '') + '">' + phoneNumber + '</a>');
 		}
-    // this caused printing issues...
-		// if (screen.width >= 1024) {
-		//	$('#teleNoun').html(phoneNumber);
-		//	$('#unicornTime').addClass('easterEgg');
-		//}
+    
+		if (screen.width >= 1024) {
+			$('#teleNoun').html(phoneNumber);
+			$('#unicornTime').addClass('easterEgg');
+		}
 
 		// append the weather condition to the résumé after the JSON returns
 		var woeid = 9848; // where on earth IDs: http://woeid.rosselliot.co.nz/
@@ -217,15 +217,16 @@
 			.html(homeAddress + ', ' + homeCity + ' ' + homeProvince)
 			.attr('href', 'https://maps.google.ca/maps?q=' + encodeURIComponent(homeAddress + ' ' + homeCity + ' ' + homeProvince));
 
-		if ($.client.os === 'Win' || $.client.os === 'Windows') {
-			$('body').css('font-family','Crimson');
-			$('.italic-dates-company').css({
-				fontFamily: 'Cantarell',
-				fontStyle: 'italic',
-				fontSize: '110%',
-				fontWeight: 'light'
-			});
-		}
+    // this caused printing issues...
+		//if ($.client.os === 'Win' || $.client.os === 'Windows') {
+		//	$('body').css('font-family','Crimson');
+		//	$('.italic-dates-company').css({
+		//		fontFamily: 'Cantarell',
+		//		fontStyle: 'italic',
+		//		fontSize: '110%',
+		//		fontWeight: 'light'
+		//	});
+		//}
 
 		// googl analyticz
 	  var _gaq = _gaq || [];
