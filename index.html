@@ -210,6 +210,7 @@
 		$('#printButton').click(function(e) {
 			e.preventDefault();
 			printpage();
+			// it should be noted the printing from chrome on windows has issues still...
 		});
 
 		// google maps link
@@ -217,16 +218,15 @@
 			.html(homeAddress + ', ' + homeCity + ' ' + homeProvince)
 			.attr('href', 'https://maps.google.ca/maps?q=' + encodeURIComponent(homeAddress + ' ' + homeCity + ' ' + homeProvince));
 
-    // this caused printing issues...
-		//if ($.client.os === 'Win' || $.client.os === 'Windows') {
-		//	$('body').css('font-family','Crimson');
-		//	$('.italic-dates-company').css({
-		//		fontFamily: 'Cantarell',
-		//		fontStyle: 'italic',
-		//		fontSize: '110%',
-		//		fontWeight: 'light'
-		//	});
-		//}
+		if ($.client.os === 'Win' || $.client.os === 'Windows') {
+			$('body').css('font-family','Crimson');
+			$('.italic-dates-company').css({
+				fontFamily: 'Cantarell',
+				fontStyle: 'italic',
+				fontSize: '110%',
+				fontWeight: 'light'
+			});
+		}
 
 		// googl analyticz
 	  var _gaq = _gaq || [];
