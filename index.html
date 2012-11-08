@@ -132,10 +132,11 @@
 		if (screen.width < 1024) {
 			$('#teleNoun').html('<a href="tel:+1' + phoneNumber.replace(/\s+/g, '') + '">' + phoneNumber + '</a>');
 		}
-		if (screen.width >= 1024) {
-			$('#teleNoun').html(phoneNumber);
-			$('#unicornTime').addClass('easterEgg');
-		}
+    // this caused printing issues...
+		// if (screen.width >= 1024) {
+		//	$('#teleNoun').html(phoneNumber);
+		//	$('#unicornTime').addClass('easterEgg');
+		//}
 
 		// append the weather condition to the résumé after the JSON returns
 		var woeid = 9848; // where on earth IDs: http://woeid.rosselliot.co.nz/
