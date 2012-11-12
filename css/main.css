@@ -455,7 +455,7 @@ p, li, noscript {
 @media only screen and (min-width: 320px) {
 
   body {
-    padding: 0 1em;
+    padding: 0 0.5em;
   }
 
 }
@@ -468,7 +468,7 @@ p, li, noscript {
 
   .main {
     margin-left: 10%;
-    margin-right: 2.5%;
+    margin-right: 5.5%;
   }
 
   .title {
@@ -502,7 +502,7 @@ p, li, noscript {
   .title {
     border-left: 1px solid black;
     height: 60px;
-    margin: 0em 0em 3em 0em;
+    margin: 0 0 3em 0;
   }
 
   .jonathanbell {

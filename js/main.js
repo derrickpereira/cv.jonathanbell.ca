@@ -11,7 +11,7 @@ var
   homeProvince = 'BC',
   homeCountry = 'Canada',
   interests = 'photography, front-end web development, rock climbing & mountaineering, coffee',
-  startedProgramming = new Date(2010, 1-1, 11, 9, 00, 00),
+  startedProgramming = new Date(2010, 1-1, 11, 9, 0, 0),
   bDay = new Date(1981, 1-1, 11, 5, 33, 33);
   // update tele number!
 

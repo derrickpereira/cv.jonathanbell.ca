@@ -1,48 +1,69 @@
-<!doctype html>
-<?php include 'http://dl.dropbox.com/u/7573777/_assets/php_inc/jb-personal.php'; ?>
-<html lang="en">
+<!DOCTYPE html>
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
 
-  <title>Jonathan Bell, Aspiring Human</title>
-  <meta name="description" content="The professional photography curriculum vitae of Jonathan Bell." />
+  <title>Jonathan Bell, Front-end Web Developer</title>
+
+  <meta name="description" content="The professional curriculum vitae of Jonathan Bell." />
   <meta name="rating" content="general" />
   <meta name="robots" content="index, follow, all" />
-  <meta name="keywords" content="Jonathan, Bell, resume, photographer, Victoria, BC, Canada, credittocreation.jonathanbell.ca, hippos, <?php echo strtolower($jb_interests); ?>" />
+  <meta name="keywords" content="Jonathan, Bell, Victoria,
+   BC, Canada, cv.jonathanbell.ca, curriculum vitae, resume, hippos,
+   photography, photos, rock climbing, mountaineering, coffee" />
 
-  <!-- Mobile viewport optimized: h5bp.com/viewport -->
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Righteous">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cantarell:400,400italic">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
 
-  <style>
+  <script src="js/vendor/modernizr-2.6.1.min.js"></script>
 
-  	/* jQuery Countdown styles 1.5.11. */
-  	p.hasCountdown {
-  		display: inline;
-  	}
+  <style type="text/css">
+    .no-js .hasCountdown,
+    .no-js #livesAndWorks {
+      display: none;
+    }
+  </style>
 
-	</style>
+  <!-- Do I even want to support old browsers...? -->
+  <!--[if lt IE 10]>
 
+  	<script src="http://raw.github.com/aFarkas/html5shiv/master/src/html5shiv.js"></script>
+  	<script src="http://raw.github.com/aFarkas/html5shiv/master/src/html5shiv-printshiv.js"></script>
+
+		<style type="text/css">
+			body {
+				font-family: serif;
+			}
+			.italic-dates-company {
+				font-family: Helvetica;
+				font-style: italic;
+			}
+		</style>
+
+	<![endif]-->
 </head>
 
 <body>
-<!-- Prompt IE 7 users to install Chrome Frame. Remove this if you support IE 7.
-     chromium.org/developers/how-tos/chrome-frame-getting-started -->
-<!--[if lt IE 8]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
-<article id="jonathanBell">
+  <article id="jonathanBell">
 
-	<header class="title">
-		<h1 class="jonathanbell">JONATHAN <span class="gotham-bold">BELL</span></h1>
-	</header>
+    <header class="title">
+      <h1 class="jonathanbell">JONATHAN <span class="gotham-bold">BELL</span></h1>
+    </header>
 
 	<div class="main" role="main">
+
 		<section>
 			<h2 class="section-headings">SUMMARY</h2>
-			<p class="hasCountdown">Age: </p><!-- provide age countup with a no javascript fallback. --><span id="countup"><noscript style="display: inline;"><?php echo $myage; ?></noscript></span>
-			<p style="margin-top: 0.25em;">Lives/Works: <?php echo $jb_city.' '.$jb_province; ?></p>
+      <p>Canadian-born photographer and front-end web developer.</p>
+      <p class="hasCountdown">Age: <span id="countup"></span> <span id="unicornTime"></span><!-- add this later --></p>
+      <p id="livesAndWorks"></p>
 		</section>
 
 		<section>
@@ -52,7 +73,7 @@
 				<h4 class="italic-dates-company">January 2007 - September 2007, Toronto, Ontario, Canada</h4>
 			</hgroup>
 			<p class="first">Large set, digital workflow, strobe lighting, product photographer, set management, location management.</p>
-			<div class="break"></div>
+			<div class="break"></div><!-- divs have no semantic meaning, so I am ok with this. -->
 			<hgroup>
 				<h3 class="sub-head-job-title">Brett Monaghan, portrait and fashion photographer</h3>
 				<h4 class="italic-dates-company">January 2006 - June 2006, Milan, Italy</h4>
@@ -76,7 +97,7 @@
 				<h3 class="sub-head-job-title">"Sylvan"</h3>
 				<h4 class="italic-dates-company">June 2011, <a href="http://www.thislittlecitymagazine.com/" target="_blank">TLC Magazine</a>, Issue 13</h4>
 			</hgroup>
-			<p class="first"><a href="http://credittocreation.jonathanbell.ca/2011/04/26/772/">Rachel Saunders' portrait</a> taken at her home, Malahat BC</p>
+			<p class="first">Rachel Saunders' portrait taken at her home, Malahat BC<!-- update a link here. --></p>
 			<p>Styling: Stephanie Hartwig</p>
 			<div class="break"></div>
 			<hgroup>
@@ -99,7 +120,7 @@
 			<h4 class="italic-dates-company">January 2007, Instituto Europeo di Design, Milan, Italy</h4>
 			</hgroup>
 			<p class="first">Graduated with diploma.</p>
-			<p>Applied skills acquired in the areas of <a href="http://info.jonathanbell.ca/">web design</a> and photography.</p>
+			<p>Applied skills acquired in the areas of <a href="http://cv.jonathanbell.ca/">web design</a> and photography.</p>
 		</section>
 
 		<section>
@@ -111,32 +132,74 @@
 			<p class="first">Donated contest earnings to Victoria Art Gallery.</p>
 		</section>
 
-		<footer>
-			<h2 class="section-headings">CONTACT</h2>
-			<p class="noTopMargin">Jonathan Bell <a href="tel:<?php echo $jb_phonenumber ?>"><?php echo $jb_phonenumber ?></a> | <a href="mailto:<?php echo $jb_emailaddress ?>"><?php echo $jb_emailaddress ?></a> | <a href="http://maps.google.ca/maps?q=<?php echo(urlencode($jb_address.' '.$jb_city.' '.$jb_province)); ?>"><?php echo $jb_address.', '.$jb_city.' '.$jb_province; ?></a></p>
-			<!-- <p><a title="Download PDF version" href="Jonathan_Bell.pdf"><img class="pdficon" alt="pdf icon" src="icon_pdf.gif" /></a></p>		 -->
-		</footer>
+    <footer>
+      <h2 class="section-headings">CONTACT</h2>
+      <p class="noTopMargin">
+        <span id="teleNoun">250 514 3982</span> | <a href="mailto:jonathanbell.ca@gmail.com">jonathanbell.ca@gmail.com</a>
+        <br />
+        <a id="addressLink" href="https://maps.google.ca/maps?q=1015+redfern+street+victoria+bc">1015 Redfern Street, Victoria BC</a>
+      </p>
+    </footer>
 
 	</div><!-- /main -->
 
-</article>
+  </article><!-- /#jonathanBell -->
 
 
-<!-- JavaScript at the bottom for fast page loading -->
+  <!-- JavaScript at the bottom for fast page loading -->
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 
-<script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
 
-	// year, month-1 (less one, zero based), day, 24hrs, min, sec
-	$('#countup').countdown( {since: new Date(1981, 1-1, 11, 5, 35, 35), timezone:-7, format:'YODHMS', compact: true} );
+  <script>
 
+    $('#livesAndWorks').append('Lives/Works: ' + homeCity + ', ' + homeProvince + '.');
 
-console.log(calcAge(bDay));
-</script>
+  	// year, month-1 (less one, zero based), day, 24hrs, min, sec
+  	$('#countup')
+      .countdown({
+        since: new Date(1981, 1-1, 11, 5, 35, 35),
+        timezone: -7,
+        format:'YODHMS',
+        compact: true
+      });
 
-<!-- I still listen to Nirvana.. Left un-minified for easy reading. Thanks for peep'n my markup! :) -->
+    $('footer').append('<p id="printBtnWrapper"><a id="printButton" href="#">Print</a></p>');
 
+    if (screen.width < 1024) {
+      $('#teleNoun').html('<a href="tel:+1' + phoneNumber.replace(/\s+/g, '') + '">' + phoneNumber + '</a>');
+    }
+
+    if (screen.width >= 1024) {
+      $('#teleNoun').html(phoneNumber);
+      // $('#unicornTime').addClass('easterEgg');
+    }
+
+    $('#printButton').click(function(e) {
+      e.preventDefault();
+      printpage();
+      // it should be noted that printing from chrome on windows has issues still...
+    });
+
+    // google maps link
+    $('#addressLink')
+      .html(homeAddress + ', ' + homeCity + ' ' + homeProvince)
+      .attr('href', 'https://maps.google.ca/maps?q=' + encodeURIComponent(homeAddress + ' ' + homeCity + ' ' + homeProvince));
+
+    if ($.client.os === 'Win' || $.client.os === 'Windows') {
+      $('body').css('font-family','Crimson');
+      $('.italic-dates-company').css({
+        fontFamily: 'Cantarell',
+        fontStyle: 'italic',
+        fontSize: '110%',
+        fontWeight: 'light'
+      });
+    }
+
+  </script>
 
 </body>
+
 </html>
