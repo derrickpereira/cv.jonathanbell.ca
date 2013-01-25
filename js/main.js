@@ -7,6 +7,7 @@
 var
   phoneNumber = '250 514 3982',
   homeAddress = '211 - 955 Humboldt Street',
+  homeAddress = '1015 Redfern Street',
   homeCity = 'Victoria',
   homeProvince = 'BC',
   homeCountry = 'Canada',
