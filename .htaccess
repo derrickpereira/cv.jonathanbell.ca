@@ -542,5 +542,9 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .xml .html .php
 #   php_value session.cookie_httponly true
 # </IfModule>
 
-AddOutputFilterByType DEFLATE text/css text/javascript
+# BEGIN GZIP
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/css application/x-javascript application/javascript
+</ifmodule>
+# END GZIP
 
