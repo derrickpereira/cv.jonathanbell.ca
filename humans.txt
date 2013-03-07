@@ -3,7 +3,7 @@
 
 # TEAM
 
-    Jonathan Bell -- Front-end Developer -- @jonnymilano
+    Jonathan Bello -- Front-end Developer -- @jonnymilano
 
 # THANKS
 
