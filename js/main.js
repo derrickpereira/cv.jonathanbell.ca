@@ -7,14 +7,13 @@
 var
   phoneNumber = '250 514 3982',
   homeAddress = '211 - 955 Humboldt Street',
-  homeAddress = '1015 Redfern Street',
+  // homeAddress = '1015 Redfern Street',
   homeCity = 'Victoria',
   homeProvince = 'BC',
   homeCountry = 'Canada',
   interests = 'photography, front-end web development, rock climbing & mountaineering, coffee',
   startedProgramming = new Date(2011, 1-1, 11, 9, 0, 0),
   bDay = new Date(1981, 1-1, 11, 5, 33, 33);
-  // update tele number!
 
 
 // simple print function
