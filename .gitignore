@@ -6,3 +6,4 @@
 /publish
 /publish/*
 sftp-config.json
+github.php
