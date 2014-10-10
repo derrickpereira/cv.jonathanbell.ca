@@ -5,7 +5,7 @@
 
 // set some vars so maybe we'll only have to place them in one place in the doc.
 var
-  phoneNumber = '250 514 3982',
+  phoneNumber = '778 677 6722',
   homeAddress = '211 - 955 Humboldt Street',
   // homeAddress = '1015 Redfern Street',
   homeCity = 'Victoria',
